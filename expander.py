@@ -46,7 +46,7 @@ for name in task_list.keys():
         for number, task_content in task_list[name][subject]:
             file_content.append(f"### Задача №{number}\n\n")
 
-            performed = task_content#"$$".join(task_content.split("TEX"))
+            performed = task_content
             file_content.append(f"\n{performed}\n")
 
 with open("README.md", 'w') as f:
